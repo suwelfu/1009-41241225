@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>記憶翻牌遊戲</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+<header>
+    <h1>記憶翻牌遊戲</h1>
+
+    <label for="countdown">翻回時間：</label>
+    <select id="countdown">
+        <option value="1000">1 秒</option>
+        <option value="2000" selected>2 秒</option>
+        <option value="3000">3 秒</option>
+    </select>
+
+    <label for="grid-size">選擇網格大小：</label>
+    <select id="grid-size">
+        <option value="2">2 x 2</option>
+        <option value="4" selected>4 x 4</option>
+        <option value="6">6 x 6</option>
+    </select>
+
+    <label for="hide-matched">隱藏匹配的卡片：</label>
+    <select id="hide-matched">
+        <option value="yes">是</option>
+        <option value="no" selected>否</option>
+    </select>
+</header>
+
+<div class="game-board"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
